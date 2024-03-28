@@ -9,6 +9,7 @@
   <groupId>mnj</groupId>
   <artifactId>pattern</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
   <name>pattern</name>
   <url>http://maven.apache.org</url>
 </project>
