@@ -1,5 +1,7 @@
 package gorgeous.algorithm;
 
+// Time Complexity: O(N*logN)
+// Space Complexity: O(logN)
 public class QuickSort {
     public void process(int[] nums) {
         if (nums == null || nums.length < 2) {
