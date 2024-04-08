@@ -40,4 +40,32 @@ public class LeetCode94 {
 
         return answer;
     }
+
+    public List<Integer> inorderTraversal3(TreeNode root) {
+        List<Integer> answer = new ArrayList<>();
+        if (root == null) {
+            return answer;
+        }
+
+        TreeNode current = root;
+        while (current != null) {
+            TreeNode mostRight = current.left;
+            if (mostRight != null) {
+                while (mostRight.right != null && mostRight.right != current) {
+                    mostRight = mostRight.right;
+                }
+                if (mostRight.right == null) {
+                    mostRight.right = current;
+                    current = current.left;
+                    continue;
+                } else {
+                    mostRight.right = null;
+                }
+            }
+            answer.add(current.value);
+            current = current.right;
+        }
+
+        return answer;
+    }
 }
