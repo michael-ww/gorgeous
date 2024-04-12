@@ -30,4 +30,20 @@ public class Utility {
         }
         return answer;
     }
+
+    public static ListNode reverse(ListNode head) {
+        if (head == null || head.next != null) {
+            return head;
+        }
+
+        ListNode current = head, previous = null, next = null;
+        while (current != null) {
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+
+        return previous;
+    }
 }
