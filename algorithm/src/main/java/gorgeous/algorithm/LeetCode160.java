@@ -19,20 +19,17 @@ public class LeetCode160 {
     }
 
     private ListNode getLoopNode(ListNode head) {
-        if (head == null) {
+        if (head == null || head.next == null || head.next.next == null) {
             return null;
         }
 
-        ListNode fast = head, slow = head;
-        while (fast != null && slow != null) {
-            if (slow.next == null || fast.next.next == null) {
+        ListNode fast = head.next.next, slow = head.next;
+        while (fast != slow) {
+            if (fast.next == null || fast.next.next == null) {
                 return null;
             }
             fast = fast.next.next;
             slow = slow.next;
-            if (fast == slow) {
-                break;
-            }
         }
 
         fast = head;

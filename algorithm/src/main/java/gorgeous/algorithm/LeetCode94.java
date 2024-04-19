@@ -25,7 +25,6 @@ public class LeetCode94 {
         if (root == null) {
             return answer;
         }
-
         Stack<TreeNode> stack = new Stack<>();
         while (!stack.isEmpty() || root != null) {
             if (root == null) {
@@ -46,7 +45,6 @@ public class LeetCode94 {
         if (root == null) {
             return answer;
         }
-
         TreeNode current = root;
         while (current != null) {
             TreeNode mostRight = current.left;

@@ -8,7 +8,6 @@ public class Utility {
         if (nums == null || nums.length <= 0 || i >= nums.length || j >= nums.length) {
             return;
         }
-
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
@@ -35,7 +34,6 @@ public class Utility {
         if (head == null || head.next != null) {
             return head;
         }
-
         ListNode current = head, previous = null, next = null;
         while (current != null) {
             next = current.next;
@@ -43,7 +41,6 @@ public class Utility {
             previous = current;
             current = next;
         }
-
         return previous;
     }
 }
