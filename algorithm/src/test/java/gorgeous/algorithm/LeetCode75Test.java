@@ -4,11 +4,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class LeetCode75Test {
+
     @Test
     public void sortColors_validInput_succeed() {
         // given
-        int[] nums1 = { 2, 0, 2, 1, 1, 0 };
-        int[] nums2 = { 2, 0, 1 };
+        int[] nums1 = {2, 0, 2, 1, 1, 0};
+        int[] nums2 = {2, 0, 1};
 
         // when
         LeetCode75 leetCode75 = new LeetCode75();

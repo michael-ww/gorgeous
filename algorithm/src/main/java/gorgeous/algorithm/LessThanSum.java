@@ -1,6 +1,7 @@
 package gorgeous.algorithm;
 
 public class LessThanSum {
+
     public int process(int[] nums) {
         if (nums == null || nums.length < 2) {
             return 0;
@@ -37,9 +38,7 @@ public class LessThanSum {
             orderArray[orderArrayIndex++] = nums[right++];
         }
 
-        for (int i = 0; i < orderArray.length; i++) {
-            nums[leftIndex + i] = orderArray[i];
-        }
+        System.arraycopy(orderArray, 0, nums, leftIndex, orderArray.length);
 
         return answer;
     }

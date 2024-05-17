@@ -1,6 +1,7 @@
 package gorgeous.algorithm;
 
 public class ListNode implements Comparable<ListNode> {
+
     public int value;
 
     public ListNode next;

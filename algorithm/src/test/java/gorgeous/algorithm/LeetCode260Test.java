@@ -4,11 +4,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class LeetCode260Test {
+
     @Test
     public void singleNumber_validInput_returnNumbers() {
         // given
-        int[] nums1 = { 1, 2, 1, 3, 2, 5 };
-        int[] nums2 = { -1, 0 };
+        int[] nums1 = {1, 2, 1, 3, 2, 5};
+        int[] nums2 = {-1, 0};
 
         // when
         LeetCode260 leetCode260 = new LeetCode260();

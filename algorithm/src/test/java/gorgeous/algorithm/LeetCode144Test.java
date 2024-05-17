@@ -1,11 +1,13 @@
 package gorgeous.algorithm;
 
-import java.util.List;
 import java.util.ArrayList;
-import org.junit.jupiter.api.Test;
+import java.util.List;
+
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class LeetCode144Test {
+
     @Test
     public void preorderTraversal_validInput_returnArray() {
         // Given

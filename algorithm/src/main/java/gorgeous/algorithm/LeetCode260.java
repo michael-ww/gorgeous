@@ -1,6 +1,7 @@
 package gorgeous.algorithm;
 
 public class LeetCode260 {
+
     public int[] singleNumber(int[] nums) {
         if (nums == null || nums.length < 2) {
             return null;
@@ -19,6 +20,6 @@ public class LeetCode260 {
             }
         }
 
-        return new int[] { eor1 ^ eor2, eor2 };
+        return new int[]{eor1 ^ eor2, eor2};
     }
 }

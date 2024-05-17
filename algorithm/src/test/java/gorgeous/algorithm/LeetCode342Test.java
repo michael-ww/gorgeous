@@ -4,12 +4,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class LeetCode342Test {
+
     @Test
     public void isPowerOfFour_validInput_returnBoolean() {
         // given
 
         // when
-        LeetCode342 leetCode342=new LeetCode342();
+        LeetCode342 leetCode342 = new LeetCode342();
         boolean answer1 = leetCode342.isPowerOfFour1(16);
         boolean answer2 = leetCode342.isPowerOfFour1(5);
         boolean answer3 = leetCode342.isPowerOfFour1(1);

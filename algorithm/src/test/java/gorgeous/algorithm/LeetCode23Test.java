@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class LeetCode23Test {
+
     @Test
     public void mergeKLists_validInput_returnHead() {
 
@@ -19,7 +20,7 @@ public class LeetCode23Test {
         ListNode ln32 = new ListNode(6);
         ListNode ln31 = new ListNode(2, ln32);
 
-        ListNode[] listNodes = new ListNode[] { ln11, ln21, ln31 };
+        ListNode[] listNodes = new ListNode[]{ln11, ln21, ln31};
 
         // When
         ListNode answer = new LeetCode23().mergeKLists(listNodes);

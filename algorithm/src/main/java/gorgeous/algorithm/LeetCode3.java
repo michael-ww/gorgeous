@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 public class LeetCode3 {
+
     public String longestDistinctSubstring1(String s) {
         if (s == null || s.length() < 2) {
             return s;

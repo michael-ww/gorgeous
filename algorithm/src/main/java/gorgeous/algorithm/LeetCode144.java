@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Stack;
 
 public class LeetCode144 {
+
     public List<Integer> preorderTraversal1(TreeNode root) {
         List<Integer> answer = new ArrayList<>();
         if (root == null) {

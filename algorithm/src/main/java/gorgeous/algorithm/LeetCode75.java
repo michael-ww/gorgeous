@@ -1,6 +1,7 @@
 package gorgeous.algorithm;
 
 public class LeetCode75 {
+
     public void sortColors(int[] nums) {
         if (nums == null || nums.length < 2) {
             return;

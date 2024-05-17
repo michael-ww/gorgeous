@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Stack;
 
 public class LeetCode94 {
+
     public List<Integer> inorderTraversal1(TreeNode root) {
         List<Integer> answer = new ArrayList<>();
         this.inorderTraversal(root, answer);

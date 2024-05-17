@@ -3,6 +3,7 @@ package gorgeous.algorithm;
 import java.util.PriorityQueue;
 
 public class LeetCode23 {
+
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists == null || lists.length <= 0) {
             return null;

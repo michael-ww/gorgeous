@@ -3,6 +3,7 @@ package gorgeous.algorithm;
 import java.util.HashSet;
 
 public class LeetCode141 {
+
     public boolean hasCycle1(ListNode head) {
         if (head == null || head.next == null) {
             return false;

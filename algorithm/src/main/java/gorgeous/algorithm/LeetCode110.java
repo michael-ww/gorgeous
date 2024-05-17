@@ -18,6 +18,7 @@ public class LeetCode110 {
     }
 
     public class BalancedInfo {
+
         public int height;
         public boolean isBalanced;
 

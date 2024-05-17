@@ -4,10 +4,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class LessThanSumTest {
+
     @Test
     public void process_validInput_ReturnSum() {
         // given
-        int[] array = { 1, 6, 2, 8, 3, 7, 4, 9, 5 };
+        int[] array = {1, 6, 2, 8, 3, 7, 4, 9, 5};
 
         // Act
         int result = new LessThanSum().process(array);

@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class LeetCode3Test {
+
     @Test
     public void longestDistinctSubstring_validInput_returnSubstring() {
         // given

@@ -6,6 +6,7 @@ import java.util.TreeMap;
 import org.openjdk.jol.info.ClassLayout;
 
 public class Collection {
+
     public static void main(String[] args) {
         // O(1)
         HashMap<String, String> hm = new HashMap<>();

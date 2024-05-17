@@ -3,6 +3,7 @@ package gorgeous.algorithm;
 // Time Complexity : O(N*logN)
 // Space Complexity: O(N)
 public class MergeSort {
+
     public void process(int[] nums) {
         if (nums == null || nums.length < 2) {
             return;
@@ -31,8 +32,6 @@ public class MergeSort {
         while (right <= rightIndex) {
             orderArray[orderArrayIndex++] = nums[right++];
         }
-        for (int i = 0; i < orderArray.length; i++) {
-            nums[leftIndex + i] = orderArray[i];
-        }
+        System.arraycopy(orderArray, 0, nums, leftIndex, orderArray.length);
     }
 }

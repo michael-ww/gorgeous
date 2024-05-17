@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class QuickSortTest {
+
     @Test
     public void process_validInput_succeed() {
         for (int i = 0; i < 100; i++) {

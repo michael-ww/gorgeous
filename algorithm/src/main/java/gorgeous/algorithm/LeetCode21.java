@@ -1,6 +1,7 @@
 package gorgeous.algorithm;
 
 public class LeetCode21 {
+
     public ListNode mergeTwoLists1(ListNode list1, ListNode list2) {
         if (list1 == null) {
             return list2;

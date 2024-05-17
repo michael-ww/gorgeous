@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class SimpleSortTest {
+
     @Test
     public void select_validInput_succeed() {
         // given

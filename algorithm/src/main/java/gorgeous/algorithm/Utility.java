@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Random;
 
 public class Utility {
+
     public static void swap(int[] nums, int i, int j) {
         if (nums == null || nums.length <= 0 || i >= nums.length || j >= nums.length) {
             return;
@@ -23,8 +24,8 @@ public class Utility {
                 if (includeNegative && i % 3 == 0) {
                     num = -num;
                 }
-            } while (distinct && hashSet.contains(Integer.valueOf(num)));
-            hashSet.add(Integer.valueOf(num));
+            } while (distinct && hashSet.contains(num));
+            hashSet.add(num);
             answer[i] = num;
         }
         return answer;
@@ -34,7 +35,7 @@ public class Utility {
         if (head == null || head.next != null) {
             return head;
         }
-        ListNode current = head, previous = null, next = null;
+        ListNode current = head, previous = null, next;
         while (current != null) {
             next = current.next;
             current.next = previous;

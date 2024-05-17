@@ -4,6 +4,7 @@ import java.util.Stack;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class LeetCode98 {
+
     public boolean isValidBST1(TreeNode root) {
         if (root == null) {
             return false;

@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class LeetCode206Test {
+
     @Test
     public void reverseList_validInput_returnHead() {
         // Arrange

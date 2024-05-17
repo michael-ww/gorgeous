@@ -1,6 +1,7 @@
 package gorgeous.algorithm;
 
 public class LeetCode137 {
+
     public int singleNumber(int[] nums) {
         if (nums == null || nums.length <= 0) {
             return Integer.MIN_VALUE;

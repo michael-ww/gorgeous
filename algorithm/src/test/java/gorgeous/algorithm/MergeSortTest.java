@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class MergeSortTest {
+
     @Test
     public void process_validInput_succeed() {
         Random random = new Random();

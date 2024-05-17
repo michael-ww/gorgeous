@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class LeetCode145Test {
+
     @Test
     public void postorderTraversal_validInput_ReturnList() {
         // Given

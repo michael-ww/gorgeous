@@ -1,7 +1,9 @@
 package gorgeous.funny;
 
 public class CacheLineNoPadding {
+
     private static class NoPadding {
+
         private volatile long X = 0L;
     }
 
@@ -35,7 +37,6 @@ public class CacheLineNoPadding {
             thread2.join();
             System.out.println((System.nanoTime() - start) / 1000000);
         } catch (InterruptedException e) {
-            e.printStackTrace();
         }
     }
 }

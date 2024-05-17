@@ -1,6 +1,7 @@
 package gorgeous.algorithm;
 
 public class SimpleSort {
+
     public void select(int[] nums) {
         if (nums == null || nums.length < 1) {
             return;

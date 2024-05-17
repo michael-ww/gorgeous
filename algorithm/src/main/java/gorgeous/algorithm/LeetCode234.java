@@ -3,6 +3,7 @@ package gorgeous.algorithm;
 import java.util.Stack;
 
 public class LeetCode234 {
+
     public boolean isPalindrome1(ListNode head) {
         if (head == null || head.next == null) {
             return true;

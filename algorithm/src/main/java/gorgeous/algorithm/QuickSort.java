@@ -3,6 +3,7 @@ package gorgeous.algorithm;
 // Time Complexity: O(N*logN)
 // Space Complexity: O(logN)
 public class QuickSort {
+
     public void process(int[] nums) {
         if (nums == null || nums.length < 2) {
             return;
@@ -32,6 +33,6 @@ public class QuickSort {
             }
         }
         Utility.swap(nums, moreIndex, rightIndex);
-        return new int[] { lessIndex + 1, moreIndex };
+        return new int[]{lessIndex + 1, moreIndex};
     }
 }

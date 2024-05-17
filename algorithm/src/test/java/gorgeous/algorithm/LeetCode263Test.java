@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class LeetCode263Test {
+
     @Test
     public void isUgly_validInput_returnBoolean() {
         // given

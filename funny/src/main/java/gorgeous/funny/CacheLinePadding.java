@@ -1,7 +1,9 @@
 package gorgeous.funny;
 
 public class CacheLinePadding {
+
     private static class Padding {
+
         public volatile long p1, p2, p3, p4, p5, p6, p7;
         public volatile long X = 0L;
         public volatile long p8, p9, p10, p11, p12, p13, p14;
@@ -36,8 +38,7 @@ public class CacheLinePadding {
             thread1.join();
             thread2.join();
             System.out.println("Padding : " + (System.nanoTime() - startPadding) / 1000000);
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (InterruptedException e) {
         }
     }
 }

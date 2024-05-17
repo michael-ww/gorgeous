@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class LeetCode98Test {
+
     @Test
     public void isValidBST1_validInput_returnBoolean() {
         // Given
