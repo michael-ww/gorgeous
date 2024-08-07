@@ -13,26 +13,24 @@ public class QuickSort {
 
     public void process(int[] nums, int leftIndex, int rightIndex) {
         if (leftIndex < rightIndex) {
-            int randomIndex = leftIndex + (int) (Math.random() * (rightIndex - leftIndex + 1));
-            Utility.swap(nums, rightIndex, randomIndex);
-            int[] middleIndexes = this.partition(nums, leftIndex, rightIndex);
-            this.process(nums, leftIndex, middleIndexes[0] - 1);
-            this.process(nums, middleIndexes[1] + 1, rightIndex);
+            int pivotIndex = leftIndex + (int) (Math.random() * (rightIndex - leftIndex + 1));
+            int[] pivotIndexes = this.partition(nums, leftIndex, rightIndex, nums[pivotIndex]);
+            this.process(nums, leftIndex, pivotIndexes[0] - 1);
+            this.process(nums, pivotIndexes[1] + 1, rightIndex);
         }
     }
 
-    public int[] partition(int[] nums, int leftIndex, int rightIndex) {
-        int lessIndex = leftIndex - 1, moreIndex = rightIndex;
-        while (leftIndex < moreIndex) {
-            if (nums[leftIndex] > nums[rightIndex]) {
-                Utility.swap(nums, --moreIndex, leftIndex);
-            } else if (nums[leftIndex] < nums[rightIndex]) {
-                Utility.swap(nums, ++lessIndex, leftIndex++);
+    public int[] partition(int[] nums, int leftIndex, int rightIndex, int pivot) {
+        int cursor = leftIndex;
+        while (cursor <= rightIndex) {
+            if (nums[cursor] > pivot) {
+                Utility.swap(nums, cursor, rightIndex--);
+            } else if (nums[cursor] < pivot) {
+                Utility.swap(nums, cursor++, leftIndex++);
             } else {
-                leftIndex++;
+                cursor++;
             }
         }
-        Utility.swap(nums, moreIndex, rightIndex);
-        return new int[]{lessIndex + 1, moreIndex};
+        return new int[]{leftIndex, rightIndex};
     }
 }

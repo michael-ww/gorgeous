@@ -14,6 +14,7 @@ gorgeous/algorithm/LeetCode94.class
 gorgeous/algorithm/LeetCode160.class
 gorgeous/algorithm/QuickSort.class
 gorgeous/algorithm/LeetCode110.class
+gorgeous/algorithm/LeetCode110$BalanceInfo.class
 gorgeous/algorithm/LeetCode23.class
 gorgeous/algorithm/TreeNode.class
 gorgeous/algorithm/Utility.class
@@ -21,7 +22,6 @@ gorgeous/algorithm/LeetCode231.class
 gorgeous/algorithm/LeetCode136.class
 gorgeous/algorithm/LeetCode137.class
 gorgeous/algorithm/LeetCode141.class
-gorgeous/algorithm/LeetCode110$BalancedInfo.class
 gorgeous/algorithm/LeetCode98.class
 gorgeous/algorithm/LeetCode234.class
 gorgeous/algorithm/LeetCode2.class
