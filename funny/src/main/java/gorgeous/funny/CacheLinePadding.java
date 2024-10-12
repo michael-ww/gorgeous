@@ -20,7 +20,7 @@ public class CacheLinePadding {
         try {
             long testTimes = 100000000L;
 
-            Thread thread1 = new Thread(() -> {
+            Thread thread1 = new Thread(()-> {
                 for (long i = 0L; i < testTimes; i++) {
                     paddingArray[0].X = i;
                 }
