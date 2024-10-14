@@ -1,4 +1,4 @@
-package gorgeous.pattern.Creational.Builder;
+package gorgeous.pattern.creational.builder;
 
 import gorgeous.pattern.Creational.Human;
 

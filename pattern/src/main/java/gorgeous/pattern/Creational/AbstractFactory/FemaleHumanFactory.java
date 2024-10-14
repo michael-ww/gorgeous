@@ -1,4 +1,4 @@
-package gorgeous.pattern.Creational.AbstractFactory;
+package gorgeous.pattern.creational.abstractfactory;
 
 import gorgeous.pattern.Creational.FemaleBlackHuman;
 import gorgeous.pattern.Creational.FemaleWhiteHuman;

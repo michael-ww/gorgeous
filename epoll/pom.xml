@@ -9,6 +9,4 @@
     <groupId>mnj</groupId>
     <artifactId>epoll</artifactId>
     <packaging>jar</packaging>
-    <name>epoll</name>
-    <url>http://maven.apache.org</url>
 </project>

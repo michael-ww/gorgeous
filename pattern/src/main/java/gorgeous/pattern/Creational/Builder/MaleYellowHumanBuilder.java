@@ -1,4 +1,4 @@
-package gorgeous.pattern.Creational.Builder;
+package gorgeous.pattern.creational.builder;
 
 import gorgeous.pattern.Creational.Human;
 import gorgeous.pattern.Creational.MaleYellowHuman;
@@ -17,5 +17,5 @@ public class MaleYellowHumanBuilder extends Builder{
         // TODO Auto-generated method stub
         return null;
     }
-    
+
 }

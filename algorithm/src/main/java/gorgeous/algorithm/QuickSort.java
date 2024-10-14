@@ -11,7 +11,7 @@ public class QuickSort {
         this.process(nums, 0, nums.length - 1);
     }
 
-    public void process(int[] nums, int leftIndex, int rightIndex) {
+    private void process(int[] nums, int leftIndex, int rightIndex) {
         if (leftIndex < rightIndex) {
             int pivotIndex = leftIndex + (int) (Math.random() * (rightIndex - leftIndex + 1));
             int[] pivotIndexes = this.partition(nums, leftIndex, rightIndex, nums[pivotIndex]);
@@ -20,7 +20,7 @@ public class QuickSort {
         }
     }
 
-    public int[] partition(int[] nums, int leftIndex, int rightIndex, int pivot) {
+    private int[] partition(int[] nums, int leftIndex, int rightIndex, int pivot) {
         int cursor = leftIndex;
         while (cursor <= rightIndex) {
             if (nums[cursor] > pivot) {

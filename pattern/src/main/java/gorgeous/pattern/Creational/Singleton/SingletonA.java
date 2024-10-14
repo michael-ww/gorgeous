@@ -1,6 +1,7 @@
-package gorgeous.pattern.Creational.Singleton;
+package gorgeous.pattern.creational.singleton;
 
 public class SingletonA {
+
     private SingletonA() {
     }
 

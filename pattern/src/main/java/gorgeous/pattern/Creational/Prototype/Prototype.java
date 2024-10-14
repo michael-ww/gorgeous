@@ -1,4 +1,4 @@
-package gorgeous.pattern.Creational.Prototype;
+package gorgeous.pattern.creational.prototype;
 
 public class Prototype implements Cloneable {
 

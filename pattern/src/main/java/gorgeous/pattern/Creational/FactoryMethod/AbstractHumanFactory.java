@@ -1,4 +1,4 @@
-package gorgeous.pattern.Creational.FactoryMethod;
+package gorgeous.pattern.creational.factorymethod;
 
 import gorgeous.pattern.Creational.Human;
 

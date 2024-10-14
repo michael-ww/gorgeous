@@ -1,5 +1,5 @@
-package gorgeous.pattern.Creational.Builder;
+package gorgeous.pattern.creational.builder;
 
 public class Director {
-    
+
 }
