@@ -1,4 +1,4 @@
-package gorgeous.pattern.Creational;
+package gorgeous.pattern.creational;
 
 public abstract class YellowHuman extends Human {
 

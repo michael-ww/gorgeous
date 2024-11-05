@@ -1,9 +1,9 @@
 package gorgeous.pattern.creational.abstractfactory;
 
-import gorgeous.pattern.Creational.Human;
-import gorgeous.pattern.Creational.MaleBlackHuman;
-import gorgeous.pattern.Creational.MaleWhiteHuman;
-import gorgeous.pattern.Creational.MaleYellowHuman;
+import gorgeous.pattern.creational.Human;
+import gorgeous.pattern.creational.MaleBlackHuman;
+import gorgeous.pattern.creational.MaleWhiteHuman;
+import gorgeous.pattern.creational.MaleYellowHuman;
 
 public class MaleHumanFactory extends HumanFactory {
 

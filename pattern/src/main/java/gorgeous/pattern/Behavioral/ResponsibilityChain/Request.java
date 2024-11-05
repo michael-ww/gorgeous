@@ -1,5 +1,5 @@
-package gorgeous.pattern.Behavioral.ResponsibilityChain;
+package gorgeous.pattern.behavioral.responsibilitychain;
 
 public abstract class Request {
-    
+
 }

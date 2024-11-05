@@ -1,4 +1,4 @@
-package gorgeous.pattern.Behavioral.Interpreter;
+package gorgeous.pattern.behavioral.interpreter;
 
 public abstract class Expression {
     public abstract Object interpret(Context context);

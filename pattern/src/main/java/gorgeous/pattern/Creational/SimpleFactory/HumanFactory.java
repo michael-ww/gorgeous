@@ -1,6 +1,6 @@
 package gorgeous.pattern.creational.simplefactory;
 
-import gorgeous.pattern.Creational.Human;
+import gorgeous.pattern.creational.Human;
 
 public class HumanFactory {
     public static <T extends Human> T createHuman(Class<T> cl) {

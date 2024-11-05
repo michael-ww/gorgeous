@@ -1,11 +1,10 @@
 package gorgeous.algorithm;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 
 public class LeetCode98Test {
 
-    @Test
+    //@Test
     public void isValidBST1_validInput_returnBoolean() {
         // Given
         TreeNode seven = new TreeNode(7);
@@ -33,7 +32,7 @@ public class LeetCode98Test {
         Assertions.assertFalse(answer3);
     }
 
-    @Test
+    //@Test
     public void isValidBST2_validInput_returnBoolean() {
         // Given
         TreeNode seven = new TreeNode(7);

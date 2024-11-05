@@ -1,4 +1,4 @@
-package gorgeous.funny;
+package gorgeous.spring.service;
 
 import java.util.HashMap;
 import java.util.TreeMap;

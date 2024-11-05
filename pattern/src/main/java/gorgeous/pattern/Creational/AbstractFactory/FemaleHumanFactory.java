@@ -1,9 +1,9 @@
 package gorgeous.pattern.creational.abstractfactory;
 
-import gorgeous.pattern.Creational.FemaleBlackHuman;
-import gorgeous.pattern.Creational.FemaleWhiteHuman;
-import gorgeous.pattern.Creational.FemaleYellowHuman;
-import gorgeous.pattern.Creational.Human;
+import gorgeous.pattern.creational.FemaleBlackHuman;
+import gorgeous.pattern.creational.FemaleWhiteHuman;
+import gorgeous.pattern.creational.FemaleYellowHuman;
+import gorgeous.pattern.creational.Human;
 
 public class FemaleHumanFactory extends HumanFactory {
 

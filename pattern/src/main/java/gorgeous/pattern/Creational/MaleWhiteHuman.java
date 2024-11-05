@@ -1,4 +1,4 @@
-package gorgeous.pattern.Creational;
+package gorgeous.pattern.creational;
 
 public class MaleWhiteHuman extends WhiteHuman{
 
@@ -6,5 +6,5 @@ public class MaleWhiteHuman extends WhiteHuman{
     public void getGender() {
         System.out.println("White Male");
     }
-    
+
 }

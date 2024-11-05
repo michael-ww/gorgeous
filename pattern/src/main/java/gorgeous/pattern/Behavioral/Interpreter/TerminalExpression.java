@@ -1,4 +1,4 @@
-package gorgeous.pattern.Behavioral.Interpreter;
+package gorgeous.pattern.behavioral.interpreter;
 
 public class TerminalExpression extends Expression{
 
@@ -7,5 +7,5 @@ public class TerminalExpression extends Expression{
         // TODO Auto-generated method stub
         return null;
     }
-    
+
 }

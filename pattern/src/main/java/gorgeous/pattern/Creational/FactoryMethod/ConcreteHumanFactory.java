@@ -1,6 +1,6 @@
 package gorgeous.pattern.creational.factorymethod;
 
-import gorgeous.pattern.Creational.Human;
+import gorgeous.pattern.creational.Human;
 
 public class ConcreteHumanFactory extends AbstractHumanFactory {
 

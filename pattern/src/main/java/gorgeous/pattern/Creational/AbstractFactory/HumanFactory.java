@@ -1,6 +1,6 @@
 package gorgeous.pattern.creational.abstractfactory;
 
-import gorgeous.pattern.Creational.Human;
+import gorgeous.pattern.creational.Human;
 
 public abstract class HumanFactory {
 

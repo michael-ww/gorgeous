@@ -1,4 +1,4 @@
-package gorgeous.pattern.Behavioral.Template;
+package gorgeous.pattern.behavioral.template;
 
 public abstract class Game {
     public abstract void start();

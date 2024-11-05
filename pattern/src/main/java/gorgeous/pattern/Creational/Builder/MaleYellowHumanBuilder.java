@@ -1,7 +1,7 @@
 package gorgeous.pattern.creational.builder;
 
-import gorgeous.pattern.Creational.Human;
-import gorgeous.pattern.Creational.MaleYellowHuman;
+import gorgeous.pattern.creational.Human;
+import gorgeous.pattern.creational.MaleYellowHuman;
 
 public class MaleYellowHumanBuilder extends Builder{
 

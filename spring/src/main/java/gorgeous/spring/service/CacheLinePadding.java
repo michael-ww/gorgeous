@@ -1,4 +1,4 @@
-package gorgeous.funny;
+package gorgeous.spring.service;
 
 public class CacheLinePadding {
 

@@ -1,4 +1,4 @@
-package gorgeous.pattern.Behavioral.Template;
+package gorgeous.pattern.behavioral.template;
 
 public class Football extends Game {
 

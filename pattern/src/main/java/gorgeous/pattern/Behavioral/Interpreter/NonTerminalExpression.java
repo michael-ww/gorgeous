@@ -1,4 +1,4 @@
-package gorgeous.pattern.Behavioral.Interpreter;
+package gorgeous.pattern.behavioral.interpreter;
 
 public class NonTerminalExpression extends Expression {
 

@@ -1,4 +1,4 @@
-package gorgeous.pattern.Creational;
+package gorgeous.pattern.creational;
 
 public class MaleYellowHuman extends YellowHuman{
 
@@ -7,5 +7,5 @@ public class MaleYellowHuman extends YellowHuman{
         System.out.println("Yellow Male");
 
     }
-    
+
 }
