@@ -32,7 +32,7 @@ public class LeetCode3 {
             return s;
         }
 
-        String answer = null;
+        String answer = "";
         int leftIndex = 0, rightIndex = 0;
         HashMap<Character, Integer> hm = new HashMap<>();
         while (rightIndex < s.length()) {

@@ -9,7 +9,7 @@
         <artifactId>gorgeous</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>gorgeous-main</artifactId>
+    <artifactId>gorgeous-test</artifactId>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>

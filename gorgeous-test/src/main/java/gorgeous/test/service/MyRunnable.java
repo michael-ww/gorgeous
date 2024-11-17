@@ -1,4 +1,4 @@
-package gorgeous.spring.service;
+package gorgeous.test.service;
 
 public class MyRunnable implements Runnable {
 

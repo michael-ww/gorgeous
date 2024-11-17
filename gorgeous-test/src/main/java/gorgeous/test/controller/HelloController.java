@@ -1,4 +1,4 @@
-package gorgeous.spring.controller;
+package gorgeous.test.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

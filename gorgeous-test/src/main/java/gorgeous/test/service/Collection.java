@@ -1,4 +1,4 @@
-package gorgeous.spring.service;
+package gorgeous.test.service;
 
 import java.util.HashMap;
 import java.util.TreeMap;
