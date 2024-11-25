@@ -8,6 +8,53 @@ public class AVL<K extends Comparable<K>, V> {
         this.root = this.add(root, key, value);
     }
 
+    public void remove(K key) {
+        TreapNode<K, V> removing = this.Search(this.root, key);
+        if (removing == null) {
+            return;
+        }
+        this.root = this.remove(this.root, key);
+    }
+
+    public V get(K key) {
+        TreapNode<K, V> searching = this.Search(this.root, key);
+        if (searching == null) {
+            return null;
+        } else {
+            return searching.getValue();
+        }
+    }
+
+    public Boolean exist(K key) {
+        return this.Search(this.root, key) != null;
+    }
+
+    public Boolean isEmpty() {
+        return this.root == null;
+    }
+
+    public Integer size() {
+        return this.root == null ? 0 : this.root.getSize();
+    }
+
+    public Integer rank(K key) {
+        return this.small(this.root, key);
+    }
+
+    public K floor(K key) {
+        TreapNode<K, V> less = this.floor(this.root, key);
+        return less == null ? null : less.getKey();
+    }
+
+    public K celling(K key) {
+        TreapNode<K, V> more = this.celling(this.root, key);
+        return more == null ? null : more.getKey();
+    }
+
+    public void clear() {
+        this.root = null;
+    }
+
     private TreapNode<K, V> add(TreapNode<K, V> node, K key, V value) {
         if (node == null) {
             node = new TreapNode<>(key, value);
@@ -22,6 +69,57 @@ public class AVL<K extends Comparable<K>, V> {
         }
         this.update(node);
         return this.maintain(node);
+    }
+
+    private TreapNode<K, V> remove(TreapNode<K, V> node, K key) {
+        if (node.getKey().compareTo(key) > 0) {
+            node.setLeft(this.remove(node.getLeft(), key));
+        } else if (node.getKey().compareTo(key) < 0) {
+            node.setRight(this.remove(node.getRight(), key));
+        } else {
+            if (node.getLeft() == null && node.getRight() == null) {
+                return null;
+            } else if (node.getLeft() == null && node.getRight() != null) {
+                node = node.getRight();
+            } else if (node.getLeft() != null && node.getRight() == null) {
+                node = node.getLeft();
+            } else {
+                TreapNode<K, V> mostLeft = node.getRight();
+                while (mostLeft.getLeft() != null) {
+                    mostLeft = mostLeft.getLeft();
+                }
+                node.setRight(this.removeMostLeft(node.getRight(), mostLeft));
+                mostLeft.setLeft(node.getLeft());
+                mostLeft.setRight(node.getRight());
+                node = mostLeft;
+            }
+        }
+        this.update(node);
+        return this.maintain(node);
+    }
+
+    private TreapNode<K, V> Search(TreapNode<K, V> node, K key) {
+        if (node == null) {
+            return null;
+        } else {
+            if (node.getKey().compareTo(key) > 0) {
+                return this.Search(node.getLeft(), key);
+            } else if (node.getKey().compareTo(key) < 0) {
+                return this.Search(node.getRight(), key);
+            } else {
+                return node;
+            }
+        }
+    }
+
+    private TreapNode<K, V> removeMostLeft(TreapNode<K, V> node, TreapNode<K, V> mostLeft) {
+        if (node.getKey().compareTo(mostLeft.getKey()) == 0) {
+            return node.getRight();
+        } else {
+            node.setLeft(this.removeMostLeft(node.getLeft(), mostLeft));
+            this.update(node);
+            return this.maintain(node);
+        }
     }
 
     private void update(TreapNode<K, V> node) {
@@ -66,5 +164,51 @@ public class AVL<K extends Comparable<K>, V> {
         this.update(node);
         this.update(left);
         return left;
+    }
+
+    private Integer small(TreapNode<K, V> node, K key) {
+        if (node == null) {
+            return 0;
+        } else {
+            if (node.getKey().compareTo(key) > 0) {
+                return this.small(node.getLeft(), key);
+            } else {
+                return 1 + node.getLeft().getSize() + this.small(node.getRight(), key);
+            }
+        }
+    }
+
+    private TreapNode<K, V> floor(TreapNode<K, V> node, K key) {
+        if (node == null) {
+            return null;
+        } else {
+            if (node.getKey().compareTo(key) >= 0) {
+                return this.floor(node.getLeft(), key);
+            } else {
+                TreapNode<K, V> right = this.floor(node.getRight(), key);
+                if (right != null && node.getKey().compareTo(right.getKey()) < 0) {
+                    return right;
+                } else {
+                    return node;
+                }
+            }
+        }
+    }
+
+    private TreapNode<K, V> celling(TreapNode<K, V> node, K key) {
+        if (node == null) {
+            return null;
+        } else {
+            if (node.getKey().compareTo(key) <= 0) {
+                return this.celling(node.getRight(), key);
+            } else {
+                TreapNode<K, V> left = this.celling(node.getLeft(), key);
+                if (left != null && node.getKey().compareTo(left.getKey()) > 0) {
+                    return left;
+                } else {
+                    return node;
+                }
+            }
+        }
     }
 }
