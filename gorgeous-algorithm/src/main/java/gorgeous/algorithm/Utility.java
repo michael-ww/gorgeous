@@ -32,10 +32,10 @@ public class Utility {
     }
 
     public static <T extends Comparable<T>> ListNode<T> reverse(ListNode<T> head) {
-        if (head == null || head.getNext() != null) {
+        if (head == null || head.getNext() == null) {
             return head;
         }
-        ListNode<T> current = head, previous = null, next;
+        ListNode<T> current = head, previous = null, next = null;
         while (current != null) {
             next = current.getNext();
             current.setNext(previous);

@@ -12,6 +12,7 @@
         <module>gorgeous-net</module>
         <module>gorgeous-pattern</module>
         <module>gorgeous-orm</module>
+        <module>gorgeous-ioc</module>
         <module>gorgeous-test</module>
     </modules>
     <properties>
