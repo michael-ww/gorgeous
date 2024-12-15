@@ -42,20 +42,20 @@ public class LeetCode160 {
     }
 
     private ListNode<Integer> getNoLoopIntersectionNode(ListNode<Integer> headA, ListNode<Integer> headB) {
-        ListNode<Integer> currentA = headA;
+        ListNode<Integer> lnA = headA;
         int nodeCount = 0;
-        while (currentA.getNext() != null) {
+        while (lnA.getNext() != null) {
             nodeCount++;
-            currentA = currentA.getNext();
+            lnA = lnA.getNext();
         }
 
-        ListNode<Integer> currentB = headB;
-        while (currentB.getNext() != null) {
+        ListNode<Integer> lnB = headB;
+        while (lnB.getNext() != null) {
             nodeCount--;
-            currentB = currentB.getNext();
+            lnB = lnB.getNext();
         }
 
-        if (currentA != currentB) {
+        if (lnA != lnB) {
             return null;
         }
 
@@ -75,7 +75,8 @@ public class LeetCode160 {
         return longlst;
     }
 
-    private ListNode<Integer> getBothLoopIntersectionNode(ListNode<Integer> headA, ListNode<Integer> loopA, ListNode<Integer> headB, ListNode<Integer> loopB) {
+    private ListNode<Integer> getBothLoopIntersectionNode(ListNode<Integer> headA, ListNode<Integer> loopA,
+            ListNode<Integer> headB, ListNode<Integer> loopB) {
         if (loopA == loopB) {
             ListNode<Integer> currentA = headA;
             int nodeCount = 0;

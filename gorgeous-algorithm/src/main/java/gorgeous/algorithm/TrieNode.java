@@ -2,17 +2,17 @@ package gorgeous.algorithm;
 
 import java.util.HashMap;
 
-public class TrieNode {
+public class TrieNode<T> {
 
     private Integer pass;
     private Integer end;
-    private String value;
-    private HashMap<Integer, TrieNode> next;
+    private T value;
+    private HashMap<T, TrieNode<T>> nexts;
 
     public TrieNode() {
         this.pass = 0;
         this.end = 0;
-        this.next = new HashMap<>();
+        this.nexts = new HashMap<>();
     }
 
     public Integer getPass() {
@@ -31,19 +31,19 @@ public class TrieNode {
         this.end = end;
     }
 
-    public String getValue() {
+    public T getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(T value) {
         this.value = value;
     }
 
-    public HashMap<Integer, TrieNode> getNext() {
-        return next;
+    public HashMap<T, TrieNode<T>> getNexts() {
+        return nexts;
     }
 
-    public void setNext(HashMap<Integer, TrieNode> next) {
-        this.next = next;
+    public void setNexts(HashMap<T, TrieNode<T>> nexts) {
+        this.nexts = nexts;
     }
 }

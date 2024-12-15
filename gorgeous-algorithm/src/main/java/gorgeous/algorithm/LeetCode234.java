@@ -37,19 +37,18 @@ public class LeetCode234 {
             slow = slow.getNext();
         }
 
-        ListNode<Integer> endNode = Utility.reverse(slow.getNext());
-        ListNode<Integer> comparer = endNode;
-        fast = head;
+        ListNode<Integer> end = Utility.reverse(slow.getNext());
+        ListNode<Integer> left = end, right = head;
         boolean answer = true;
-        while (comparer != null) {
-            if (comparer.getValue() != fast.getValue()) {
+        while (left != null) {
+            if (left.getValue() != right.getValue()) {
                 answer = false;
                 break;
             }
-            comparer = comparer.getNext();
-            fast = fast.getNext();
+            left = left.getNext();
+            right = right.getNext();
         }
-        slow.setNext(Utility.reverse(endNode));
+        slow.setNext(Utility.reverse(end));
         return answer;
     }
 }
