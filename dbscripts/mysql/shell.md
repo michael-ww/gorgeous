@@ -1,1 +1,0 @@
-./bin/mysqld_safe --defaults-file=./etc/my.cnf --user=root &
