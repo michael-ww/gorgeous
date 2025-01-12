@@ -1,6 +1,7 @@
 package gorgeous.algorithm;
 
 public class LeetCode1411 {
+
     public int numOfWays(int n) {
         if (n <= 0) {
             return 0;

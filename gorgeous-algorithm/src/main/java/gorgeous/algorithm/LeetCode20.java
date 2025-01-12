@@ -3,6 +3,7 @@ package gorgeous.algorithm;
 import java.util.Stack;
 
 public class LeetCode20 {
+
     public boolean isValid(String s) {
         if (s.length() % 2 != 0) {
             return false;

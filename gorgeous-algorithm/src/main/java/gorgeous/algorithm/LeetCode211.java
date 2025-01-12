@@ -1,6 +1,7 @@
 package gorgeous.algorithm;
 
 public class LeetCode211 {
+
     public static class WordDictionary {
 
         private final TrieNode<Character> root;

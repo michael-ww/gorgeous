@@ -17,7 +17,7 @@ public class LeetCode234 {
         }
 
         current = head;
-        while (current != null) {
+        while (!stack.isEmpty()) {
             if (current != stack.pop()) {
                 return false;
             }
@@ -41,7 +41,7 @@ public class LeetCode234 {
         ListNode<Integer> left = end, right = head;
         boolean answer = true;
         while (left != null) {
-            if (left.getValue() != right.getValue()) {
+            if (left.getValue().equals((right.getValue()))) {
                 answer = false;
                 break;
             }

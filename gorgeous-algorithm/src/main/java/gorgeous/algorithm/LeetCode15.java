@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class LeetCode15 {
+
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> answer = new ArrayList<>();
         if (nums == null || nums.length < 3) {

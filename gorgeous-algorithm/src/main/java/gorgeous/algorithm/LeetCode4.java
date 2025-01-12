@@ -1,13 +1,8 @@
 package gorgeous.algorithm;
 
 public class LeetCode4 {
+
     public double findMedianSortedArrays1(int[] nums1, int[] nums2) {
-        if (nums1 == null && nums2 == null) {
-            throw new NullPointerException();
-        }
-        if (nums1.length <= 0 && nums2.length <= 0) {
-            throw new IllegalArgumentException();
-        }
         if (nums1 == null || nums1.length <= 0) {
             if (nums2.length % 2 == 0) {
                 return (nums2[nums2.length / 2 - 1] + nums2[nums2.length / 2]) / 2d;
@@ -39,12 +34,6 @@ public class LeetCode4 {
     }
 
     public double findMedianSortedArrays2(int[] nums1, int[] nums2) {
-        if (nums1 == null && nums2 == null) {
-            throw new NullPointerException();
-        }
-        if (nums1.length <= 0 && nums2.length <= 0) {
-            throw new IllegalArgumentException();
-        }
         if (nums1 == null || nums1.length <= 0) {
             if (nums2.length % 2 == 0) {
                 return (nums2[nums2.length / 2 - 1] + nums2[nums2.length / 2]) / 2d;
@@ -68,10 +57,6 @@ public class LeetCode4 {
     }
 
     private int getKthElement(int[] nums1, int[] nums2, int kth) {
-        if ((nums1 == null && nums2 == null) || (nums1.length <= 0 && nums2.length <= 0)
-                || (nums1.length + nums2.length) > kth || kth <= 0) {
-            throw new IllegalArgumentException();
-        }
         if (nums1 == null || nums1.length <= 0) {
             return nums2[kth - 1];
         }
@@ -104,12 +89,6 @@ public class LeetCode4 {
     }
 
     public double findMedianSortedArrays3(int[] nums1, int[] nums2) {
-        if (nums1 == null && nums2 == null) {
-            throw new NullPointerException();
-        }
-        if (nums1.length <= 0 && nums2.length <= 0) {
-            throw new IllegalArgumentException();
-        }
         if (nums1 == null || nums1.length <= 0) {
             if (nums2.length % 2 == 0) {
                 return (nums2[nums2.length / 2 - 1] + nums2[nums2.length / 2]) / 2d;

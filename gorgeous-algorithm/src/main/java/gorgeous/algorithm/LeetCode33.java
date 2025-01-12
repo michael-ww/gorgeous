@@ -1,6 +1,7 @@
 package gorgeous.algorithm;
 
 public class LeetCode33 {
+
     public int search(int[] nums, int target) {
         if (nums == null || nums.length <= 0) {
             return -1;

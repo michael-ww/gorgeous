@@ -14,6 +14,15 @@ public class Utility {
         array[j] = temp;
     }
 
+    public static void swap(long[] array, int i, int j) {
+        if (array == null || array.length <= 0 || i >= array.length || j >= array.length) {
+            return;
+        }
+        long temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+
     public static int[] generate(int length, int maxValue, boolean distinct, boolean includeNegative) {
         int[] answer = new int[length];
         HashSet<Integer> hashSet = new HashSet<>();

@@ -7,9 +7,9 @@ public class LeetCode206 {
             return head;
         }
 
-        ListNode<Integer> previous = null, current = head, next;
+        ListNode<Integer> previous = null, current = head;
         while (current != null) {
-            next = current.getNext();
+            ListNode<Integer> next = current.getNext();
             current.setNext(previous);
             previous = current;
             current = next;

@@ -13,7 +13,7 @@ public class LeetCode21 {
         ListNode<Integer> current = null;
         dummy.setNext(current);
         while (list1 != null || list2 != null) {
-            if (list1 == null || (list2 != null && list1.getValue() < list2.getValue())) {
+            if (list1 == null || (list2 != null && list1.getValue() > list2.getValue())) {
                 current = list2;
                 list2 = list2.getNext();
             } else {

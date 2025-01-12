@@ -1,18 +1,19 @@
 package gorgeous.algorithm;
 
 public class LeetCode236 {
+
     public TreeNode<Integer> lowestCommonAncestor(TreeNode<Integer> root, TreeNode<Integer> p, TreeNode<Integer> q) {
-        if (root == null || p == null || q == null) {
+        if (root == null || root == p || root == q) {
             return root;
         }
 
-        TreeNode<Integer> leftTreeNode = this.lowestCommonAncestor(root.getLeft(), p, q);
-        TreeNode<Integer> righTreeNode = this.lowestCommonAncestor(root.getRight(), p, q);
+        TreeNode<Integer> left = this.lowestCommonAncestor(root.getLeft(), p, q);
+        TreeNode<Integer> right = this.lowestCommonAncestor(root.getRight(), p, q);
 
-        if (leftTreeNode != null && righTreeNode != null) {
+        if (left != null && right != null) {
             return root;
         } else {
-            return leftTreeNode == null ? righTreeNode : leftTreeNode;
+            return left == null ? right : left;
         }
     }
 }

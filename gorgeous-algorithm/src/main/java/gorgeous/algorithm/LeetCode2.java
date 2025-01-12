@@ -9,8 +9,8 @@ public class LeetCode2 {
         if (l2 == null) {
             return l1;
         }
-        ListNode<Integer> answer = new ListNode<>(0);
-        ListNode<Integer> current = answer;
+        ListNode<Integer> dummy = new ListNode<>(0);
+        ListNode<Integer> current = dummy;
         int carryNumber = 0;
         while (l1 != null || l2 != null) {
             int x = l1 == null ? 0 : l1.getValue();
@@ -30,6 +30,6 @@ public class LeetCode2 {
         if (carryNumber > 0) {
             current.setNext(new ListNode<>(carryNumber));
         }
-        return answer.getNext();
+        return dummy.getNext();
     }
 }

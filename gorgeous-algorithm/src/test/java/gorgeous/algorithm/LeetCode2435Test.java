@@ -1,7 +1,6 @@
 package gorgeous.algorithm;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 
 public class LeetCode2435Test {
 

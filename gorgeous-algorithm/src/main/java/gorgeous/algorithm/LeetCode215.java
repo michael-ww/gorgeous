@@ -1,10 +1,10 @@
 package gorgeous.algorithm;
 
 import java.security.InvalidParameterException;
-import java.util.Random;
 import java.util.random.RandomGenerator;
 
 public class LeetCode215 {
+
     public int findKthLargest1(int[] nums, int k) {
         if (nums == null) {
             throw new NullPointerException();
@@ -19,7 +19,8 @@ public class LeetCode215 {
         if (leftIndex >= rightIndex) {
             return nums[leftIndex];
         }
-        int pivotIndex = leftIndex + new Random().nextInt(rightIndex - leftIndex + 1);
+
+        int pivotIndex = leftIndex + RandomGenerator.getDefault().nextInt(rightIndex - leftIndex + 1);
         int[] pivotBoundary = this.partition(nums, leftIndex, rightIndex, nums[pivotIndex]);
         if (kthIndex >= pivotBoundary[0] && kthIndex <= pivotBoundary[1]) {
             return nums[pivotBoundary[0]];
@@ -42,7 +43,7 @@ public class LeetCode215 {
                 cusor++;
             }
         }
-        return new int[] { leftIndex, rightIndex };
+        return new int[]{leftIndex, rightIndex};
     }
 
     public int findKthLargest2(int[] nums, int k) {

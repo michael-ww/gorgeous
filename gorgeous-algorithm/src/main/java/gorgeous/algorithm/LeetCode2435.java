@@ -1,6 +1,7 @@
 package gorgeous.algorithm;
 
 public class LeetCode2435 {
+
     public int numberOfPaths1(int[][] grid, int k) {
         return this.numberOfPaths1(grid, k, 0, 0, 0);
     }
